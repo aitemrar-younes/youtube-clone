@@ -166,16 +166,21 @@ button.lits-item:hover{
     height: 100vh;
     background-color: #ffffff;
     position: fixed;
-    padding: 0 30px;
     color: #282828;
     z-index: 801;
-    overflow-y: auto;
 }
 .sidebar.active{
     left: 0;
 }
 .sidebar .logo{
     height: 60px;
+    padding: 0 30px;
+}
+.sidebar-content{
+    display: block;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+    width: 100%;
 }
 .sidebar-menu{
     display: flex;
