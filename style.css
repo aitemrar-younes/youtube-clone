@@ -178,11 +178,15 @@ button.lits-item:hover{
 }
 .sidebar-content{
     display: block;
-    overflow-y: auto;
+    overflow: hidden;
     height: calc(100vh - 60px);
     width: 100%;
     padding: 0 30px;
+    transition: overflow ease-in-out 1s;
 }
+.sidebar-content:hover{
+    overflow-y: auto;
+  }
 .sidebar-menu{
     display: flex;
     justify-content: center;
@@ -226,3 +230,22 @@ button.lits-item:hover{
     padding-top: 60px;
     background-color: #6de4ac;
 }
+
+/* Thin scrollbar track */
+::-webkit-scrollbar {
+    width: 8px; /* Adjust the width as needed */
+    border-radius: 8px; /* Adjust the border radius as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Thin scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the thumb */
+    border-radius: 8px; /* Match the border radius of the track */
+}
+  
+  /* Thin scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the thumb on hover */
+  }
