@@ -181,6 +181,7 @@ button.lits-item:hover{
     overflow-y: auto;
     height: calc(100vh - 60px);
     width: 100%;
+    padding: 0 30px;
 }
 .sidebar-menu{
     display: flex;
