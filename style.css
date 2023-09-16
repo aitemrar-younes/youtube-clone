@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@300;400;500;600;700;800;900&family=Sen:wght@400;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+    height: 60px;
+    background-color: #282828;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.icon-menu{
+    font-size: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.logo .icon{
+    font-size: 35px;
+    color: #FF0000;
+}
+.logo-text{
+    font-weight: 400;
+    letter-spacing: -2px;
+    font-size: 21px;
+    position: relative;
+}
+.logo-text .country{
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -5;
+    right: -15;
+}
+/* Search div */
+.searchContainer{
+    padding: 0 25px;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+}
+.inputContainer{
+    flex: 1;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    border: 0.5px solid #616161;
+}
+.inputSearch{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0 10px;
+    color: white;
+    font-size: 17px;
+}
+.btnSearch{
+    padding: 0 20px;
+    background-color: #414040;
+    border: none;
+    cursor: pointer;
+}
+.btnSearch .icon{
+    font-size: 18px;
+    color: white;
+}
+
+.voiceRecord{
+    height: 40px;
+    width: 40px;
+    background-color: #414040;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.voiceRecord .icon{
+    font-size: 18px;
+}
+
+/* nav */
+nav .list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.lits-item{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+button.lits-item:hover{
+    border: 1px solid transparent;
+    background-color: #414040;
+}
+.item-icon{
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+}
+
+
+
+
+
+
+.lits-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
